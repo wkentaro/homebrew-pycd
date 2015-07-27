@@ -4,7 +4,7 @@ class Pycd < Formula
   url "https://github.com/wkentaro/pycd/archive/0.3.0.tar.gz"
   sha256 "45dede5f75de3feeb4e9474d2ca0ae4462d54973305cb9788aeab3c64f6e78ed"
 
-  head 'https://github.com/wkentaro/pycd.git'
+  head "https://github.com/wkentaro/pycd.git"
 
   depends_on :python if MacOS.version <= :snow_leopard
 
@@ -23,7 +23,6 @@ class Pycd < Formula
     url "https://github.com/kennethreitz/clint/archive/v0.4.1.tar.gz"
     sha256 "6709b638fd13fc2395284d0d42fe857ce97fdb6f03929ceb7ece28393933b4ea"
   end
-
 
   def install
     ENV.prepend_create_path "PYTHONPATH", libexec/"vendor/lib/python2.7/site-packages"
