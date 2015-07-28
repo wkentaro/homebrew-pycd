@@ -1,7 +1,7 @@
 class Pycd < Formula
   desc "change directory for python modules"
   homepage "https://github.com/wkentaro/pycd"
-  url "https://github.com/wkentaro/pycd/archive/0.3.0.tar.gz"
+  url "https://github.com/wkentaro/pycd/archive/0.3.5.tar.gz"
   sha256 "45dede5f75de3feeb4e9474d2ca0ae4462d54973305cb9788aeab3c64f6e78ed"
 
   head "https://github.com/wkentaro/pycd.git"
@@ -34,11 +34,11 @@ class Pycd < Formula
     end
 
     # Install bash completion
-    bash_completion.install "pycd-completion.bash" => "pycd-completion.bash"
+    bash_completion.install "completion/pycd-completion.bash" => "pycd-completion.bash"
 
     # Install zsh completion
-    zsh_completion.install "_pycd" => "_pycd"
-    zsh_completion.install "_pypkg" => "_pypkg"
+    zsh_completion.install "completion/_pycd" => "_pycd"
+    zsh_completion.install "completion/_pypkg" => "_pypkg"
 
     # pycd function
     share.install "pycd.sh"

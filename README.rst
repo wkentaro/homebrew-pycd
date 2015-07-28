@@ -6,7 +6,7 @@ Change directory for python modules.
 
 Current Version
 ===============
-* pycd 0.3.0
+* pycd 0.3.5
 
 
 Installing homebrew-pycd formula
